@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": false,
   "builds": [
     { "src": "api/index.js", "use": "@now/node"},
     { "src": "front/next.config.js", "use": "@now/next"}
