@@ -6,9 +6,9 @@
     { "src": "front/next.config.js", "use": "@now/next"}
   ],
   "routes": [
-    { "src": "^/api", "dest": "/api/index.js" },
-    { "src": "^/foo/(.*)", "dest": "/front/foo/$1"},
-    { "src": "^/bar/(.*)", "dest": "/front/bar/$1" },
-    { "src": "^/(.*)", "dest": "/front/$1" }
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/foo/(.*)", "dest": "/front/foo/$1"},
+    { "src": "/bar/(.*)", "dest": "/front/bar/$1" },
+    { "src": "/(.*)", "dest": "/front/$1", "continue": true }
   ]
 }
